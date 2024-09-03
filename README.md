@@ -1,4 +1,6 @@
 # monae
+[![DOI](https://zenodo.org/badge/830540235.svg)](https://zenodo.org/doi/10.5281/zenodo.13636951)
+
 monae: multi-modal single-cell integration and imputation
 
 # Environment
