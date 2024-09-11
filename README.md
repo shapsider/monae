@@ -9,14 +9,12 @@ Python version: python 3.8
 Install the following dependencies via pip or conda:
 ```python
 pip install muon
-pip install git+https://github.com/pinellolab/simba_pbg.git
-pip install git+https://github.com/huidongchen/simba
+pip install torchbiggraph
 pip install scanpy
-pip install scglue
 pip install pytorch-ignite
 pip install typing_extensions
 pip install tensorboardX
-pip install torch-1.11.0+cu113-cp38-cp38-linux_x86_64.whl
+pip install torch-1.11.0+cu113
 ```
 
 # Dataset
@@ -50,7 +48,7 @@ The models and datasets are organized as follows:
 In ipynb files, select one of four datasets: `pbmc, chen2019, ma2020, muto2021`.
 
 # Monae-Extension
-A more stable and faster training strategy is provided here for Monae's variant Monae-E. Run the following files in sequence:
+At present, the repo released a stable and convenient training strategy for Monae's variant Monae-E. Run the following files in sequence:
 
 1. preprocess_1.py: data preprocess and constructing graph guidance.
 2. preprocess_2.py: Unified learning of cell and feature representations.
@@ -58,7 +56,12 @@ A more stable and faster training strategy is provided here for Monae's variant 
 
 Take the PBMC dataset as an example, the trained model has been saved here: `dataset/pbmc/result/ckpt/monae.dill`. Loading trained model in `inference.ipynb`.
 
-# reference
+## Todo
+- [ ] Complete training process for Monae and Monae-E
+- [ ] Pipeline for generating gene networks
+
+
+# Reference
 
 [1] Cellcano: supervised cell type identification for single cell ATAC-seq data, nature communications, 2023
 
