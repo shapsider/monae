@@ -222,10 +222,7 @@ class CoVELTrainer(GLUETrainer):
             ce_loss = F.cross_entropy(
                 net.u2c(u_cat[lmsk]), xlbl_cat[lmsk], reduction="none"
             ).sum() / max(lmsk.sum(), 1)
-            # sce_loss = self.sce(net.u2c(u_cat[lmsk]))
             ddc_loss = self.ddc(u_cat[lmsk], net.u2c(u_cat[lmsk]))
-            # TODO: 观察额外的损失
-            # print("sce: {}, ddc: {}".format(sce_loss.item(), ddc_loss.item()))
             sup_loss = ddc_loss + ce_loss
 
         else:
