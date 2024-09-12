@@ -27,7 +27,7 @@ def generate_gaussian_vectors(lst, length, mean=0, std_dev=1):
     return np.array(gaussian_vectors)
 
 # Load data into a Muon object.
-mdata = mu.read_h5mu("./adatas/opcite_preprocessed.h5mu.gz")
+mdata = mu.read_h5mu("./adatas/citeseq.h5mu.gz")
 # print(mdata)
 
 adata_CPro = mdata['adt']
