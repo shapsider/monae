@@ -16,7 +16,7 @@ warnings.filterwarnings("ignore")
 
 workdir = f"./gnn_result"
 
-mdata = mu.read_h5mu("./adatas/opcite_preprocessed.h5mu.gz")
+mdata = mu.read_h5mu("./adatas/citeseq.h5mu.gz")
 print(mdata)
 adata_CPro = mdata['adt']
 adata_CG = mdata['rna']
