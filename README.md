@@ -29,6 +29,7 @@ gtf="./src/bedtools/annotation/gencode.vM25.chr_patch_hapl_scaff.annotation.gtf.
 ```
 
 # Example
+## Trained Monae
 See the monae example in the `notebook_monae`. Trained Monae model:
 
 link: https://pan.baidu.com/s/1F-EzYazz31_LEOMEfxMM2w?pwd=v8wl
@@ -46,6 +47,14 @@ The models and datasets are organized as follows:
 ```
 
 In ipynb files, select one of four datasets: `pbmc, chen2019, ma2020, muto2021`.
+
+## Auto infer guidance
+A new version is provided here that can generate guidance without relying on annotation files, please refer to the dir `liu`. Run the following files in sequence:
+
+1. 1_train_gnn.py
+2. 2_graph_generation.py
+3. 3_integration.py
+4. 4_inference.ipynb
 
 # Monae-Extension
 At present, the repo released a stable and convenient training strategy for Monae's variant Monae-E. Run the following files in sequence:
