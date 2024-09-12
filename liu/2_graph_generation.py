@@ -1,6 +1,7 @@
 import os
 import sys
-import gnn_src as si
+sys.path.append("..")
+import src.emb_init as si
 import anndata
 import matplotlib.pyplot as plt
 import time 
