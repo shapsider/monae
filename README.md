@@ -56,6 +56,9 @@ A new version is provided here that can generate guidance without relying on ann
 3. 3_integration.py
 4. 4_inference.ipynb
 
+## Other modality
+Same order of execution as above, here are examples for RNA and protein modalities, please refer to the dir `prot`.
+
 # Monae-Extension
 At present, the repo released a stable and convenient training strategy for Monae's variant Monae-E. Run the following files in sequence:
 
