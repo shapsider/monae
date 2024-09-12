@@ -7,6 +7,7 @@ from ._umap import umap
 from ._gene_scores import gene_scores
 from ._integration import (
     infer_edges,
+    infer_guidance_edges,
     trim_edges
 )
 from ._pbg import (
