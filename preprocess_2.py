@@ -28,7 +28,6 @@ adata_CP.var['end'] = adata_CP.var['chromEnd']
 si.pp.normalize(adata_CG,method='lib_size')
 si.pp.log_transform(adata_CG)
 si.tl.discretize(adata_CG,n_bins=5)
-
 si.pl.discretize(adata_CG,kde=True)
 plt.savefig(f"{workdir}/discretize_rna.png")
 
@@ -54,6 +53,14 @@ si.pl.svd_nodes(adata_CrnaCatac,
 plt.savefig(f"{workdir}/svd_nodes.png")
 
 si.tl.trim_edges(adata_CrnaCatac, cutoff=0.5)
+
+# ATAC预处理
+si.pp.cal_qc_rna(adata_CP)
+si.pp.normalize(adata_CP,method='lib_size')
+si.pp.log_transform(adata_CP)
+si.tl.discretize(adata_CP,n_bins=5)
+si.pl.discretize(adata_CP,kde=False)
+plt.savefig(f"{workdir}/discretize_atac.png")
 
 si.tl.gen_graph(list_CP=[adata_CP],
                 list_CG=[adata_CG],
