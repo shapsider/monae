@@ -69,6 +69,7 @@ At present, the repo released a stable and convenient training strategy for Mona
 Take the PBMC dataset as an example, the trained model has been saved here: `dataset/pbmc/result/ckpt/monae.dill`. Loading trained model in `inference.ipynb`.
 
 ## Todo
+- [ ] Add new preprocessing method: rank value encoding, like [Geneformer](https://github.com/jkobject/geneformer).
 - [ ] Complete training process for Monae and Monae-E
 - [ ] Pipeline for generating gene networks
 
